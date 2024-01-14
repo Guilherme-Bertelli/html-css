@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de texto</title>
+    <style>
+        mark.cinza {
+            background-color: #a5a5a5;
+        }
+    </style>
+</head>
+<body>
+    <iframe src="../ex007/index.html"></iframe>
+    <h1>Principais formatações</h1>
+
+    
+    <h2>Negrito / Destaque</h2> 
+    <!-- Termo não semântico -->
+    <p>Nesta frase, temos um <b>termo em negrito</b> usando a tag &lt b &gt (Não semântica).</p>
+
+    <!-- Termo semântico -->
+    <p>Nesta frase, tenho um <strong>termo em destaque</strong> usando a tag &lt strong &gt (Semântica).</p>
+    <hr>
+
+    <h2>Itálico / Ênfase</h2>
+    <!-- Termo não semântico -->
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag &lt i &gt (Não semântica).</p>
+
+    <!-- Termo semântico -->
+    <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag &lt em &gt (semântica).</p>
+
+    <p>Lorem <stra>ipsum dolor sit</stra> amet consectetur adipisicing elit. Culpa labore ipsum blanditiis quisquam vitae dolore laudantium laboriosam officiis error? Commodi at accusantium minima incidunt sapiente odio, sed saepe corporis temporibus?</p>
+    <hr>
+
+    <h2>Texto marcado</h2>
+    <p>Podemos criar também um <mark style="background-color: cyan;">texto marcado</mark> usando a tag &lt mark &gt.</p>
+    <p>E no outro parágrafo, temos <mark class="cinza">outro texto marcado</mark> no final.</p>
+    <p>E no outro parágrafo, temos <mark class="cinza">mais um texto  marcado</mark> no final.</p>
+    <hr>
+
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>Texto grande</big> com a tag &lt big &gt, e um <small>texto pequeno</small> com a tag &lt small &gt nesse parágrafo.</p>
+    <hr>
+
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido mas não considerado.</p>
+
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar um <ins>texto como inserido</ins> para dar uma ênfase e indicar que ele foi adiciondo depois.</p>
+    <p>Existe também o <u>texto sublinhado</u> com a tag &lt u &gt (Não semântica).</p>
+    
+    <h3>Exemplo dos elementos &lt ins &gt e &lt del &gt, Textos inserido e deletado</h3>
+
+    <ul>
+        <li>Inprovisação na música contemporânea - 10 horas.</li>
+        <li><del>Técnicas de respiração - 14 horas</del> <ins>(vagas esgotadas).</ins></li>
+    </ul>
+
+    <h3>Texto inserido em bloco</h3>
+    <ins>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, iure quis minima aspernatur rerum exercitationem autem suscipit sit itaque? Sit a officia quia vel voluptate repellendus, aperiam quibusdam reiciendis pariatur.</p>
+    </ins>
+
+    <h3>Texto deletado em bloco</h3>
+    <del>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, iure quis minima aspernatur rerum exercitationem autem suscipit sit itaque? Sit a officia quia vel voluptate repellendus, aperiam quibusdam reiciendis pariatur.</p>
+    </del>
+
+    <!-- DEL Não serve para deletar e sim para declarar que o conteúdo está desatualizado -->
+    <h2>Conteúdo desatualizado</h2>
+    <p>Ainda dá tempo de comprar !</p>
+    <p><s>Trompete Bb por $500</s></p>
+    <p><strong>Agora por $400</strong></p>
+    <hr>
+    <h2>Texto sbrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3</p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psseudo-classes</title>
+    <style>
+        #d1,#d2,#d3 {
+            display: inline-block;
+            background-color: tomato;
+            border: 2px blueviolet solid;
+            width: 250px;height: 270px;
+            margin: 1px;
+        }
+
+        #d1:active {
+            background-color: brown;
+        }
+
+        #d2:hover {
+            background-color: blanchedalmond;
+            border: 5px red solid;
+            transition: 0.5s;
+        }
+
+        #w {
+            display: none;
+        }
+
+        #x:hover > #w{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+
+    <h1>Passe o mouse sobre o texto abaixo:</h1>
+    <div id="x">
+        Passe
+        <p id="w">olhee!!!</p>
+    </div>
+</body>
+</html>
