@@ -111,15 +111,18 @@ figcaption.legend {
 
 /* rodapé */
 footer {
+    position: relative;
     background-color: black;
     color: white;
     height: 5vw;
     width: 100%;
     text-align: center;
-    padding-top: 1.5vw;
 }
 
 footer > p {
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 1.3em;
 }
 
