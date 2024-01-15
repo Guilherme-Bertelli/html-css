@@ -17,105 +17,124 @@ body {
     font-style: normal;
 }
  
+/* cabeçalho */
 header {
     background-color: black;
     color: white;
     text-align: center;
     width: 100%;
     height: auto;
-    padding: 15px;
-}
-
-main p {
-    font-size: 3.6vw;
-    font-weight: bold;
-    padding-left: 20px;
-}
-
-p.parag {
-    padding-top: 2em;
-    padding-bottom: 2em;
-    line-height: 2em;
-}
-
-figcaption.legend p {
-    color: white;
-}
-
-span.text {
-    font-size: 1.6em;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-span.text::after {
-    content: "\00a0";
-}
-
-a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 1.6em;
-    padding-bottom: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-a:hover {
-    text-decoration: underline;
+    padding: 15px 15px 30px 15px;
 }
 
 h1 {
-    font-size: 6vw;
+    font-size: 6.7vw;
     font-family: "Unbounded", sans-serif;
     padding: 25px 0;
 }
 
+/* todos os parágrafos */
+main p {
+    font-size: 4.5vw;
+    font-weight: bold;
+    padding-left: 20px;
+    line-height: 8vw;
+}
+
+/* sections dos parágrafos */
+section.prg {
+
+}
+
+section.prg > p {
+    margin: 5vw 0;
+}
+
+/* link */
+header > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header > a:hover {
+    text-decoration: underline;
+}
+
+span.txtLink {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* efeito  paralax */
 section.paralax {
     position: relative;
+    background: no-repeat center center/cover fixed;
     width: 100%;
     margin: 0;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-
+    height: 45vw;
+    color: white;
 }
 
-section > p {
-    line-height: 2em;
+figcaption p {
+    font-size: 3.8vw;
 }
 
-section#p1 {
-    height: 700px;
+/* 1° imagem */
+section#prl1 {
     background-image: url("../imagens/relojio01.jpg");
 }
 
-section#p2 {
+/* 2° imagem */
+section#prl2 {
     background-image: url("../imagens/carta01.jpg");
-    height: 800px;
 }
 
+/* legenda */
 figcaption.legend {
     position: absolute;
     background-color: #0806065c;
-    width: 50%;
-    margin: 0;
-    top: 50%;
+    width: 54vw;
+    top: 50%;left: 2.3%;
     transform: translate(0, -50%);
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
+    border-radius: 10px;
 }
 
-#l1 {
-    height: 600px;
+/* altura da legenda 1 */
+#leg1 {
+    height: 40vw;
 }
 
-#l2 {
-    height: 600px;
+/* altura da legenda 2 */
+#leg2 {
+    height: 40vw;
+    width: 57vw;
 }
 
+/* rodapé */
 footer {
     background-color: black;
-    height: 50px;
+    color: white;
+    height: 5vw;
     width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+
+footer > p {
+    font-size: 1.5vw;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
 }
