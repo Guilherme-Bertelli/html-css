@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        p {
+            display: inline-block;
+        }
+
+        input {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <!-- - NAME: Em formulários é mais útil para PHP e JS.
+         - ID: Já o ID é útil para HTML.
+    -->
+    <form action="cadastro.php" autocomplete="on" method="post"><!-- post não protege os dados literalmente. Get só aceita até 3 mil bytes(3 mil letras), não utíliza-lo no envio se senhas e dados sensíveis, e também, para fotos, vídeos etc... Nesses casos devo usar o método POST -->
+        <label for="inome">Nome:</label>
+        <input type="text" name="nome" id="inome"><br>
+
+        <label for="isobrenome">Sobrenome:</label>
+        <input type="text" name="sobrenome" id="isobrenome"><br>
+
+        <input type="submit" value="ENVIAR">
+    </form>
+</body>
+</html>
