@@ -20,10 +20,15 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <!-- - NAME: Em formulários é mais útil para PHP e JS.
-         - ID: Já o ID é útil para HTML.
+    <!-- 
+        - NAME: Em formulários é mais útil para PHP e JS.
+        - ID: Já o ID é útil para HTML.
     -->
-    <form action="cadastro.php" autocomplete="on" method="post"><!-- post não protege os dados literalmente. Get só aceita até 3 mil bytes(3 mil letras), não utíliza-lo no envio se senhas e dados sensíveis, e também, para fotos, vídeos etc... Nesses casos devo usar o método POST -->
+
+    <!-- 
+        POST não protege os dados literalmente. Get só aceita até 3 mil bytes(3 mil letras), não utíliza-lo no envio se senhas e dados sensíveis, e também, para fotos, vídeos etc... Nesses casos devo usar o método POST 
+    -->
+    <form action="cadastro.php" autocomplete="on" method="post">
         <label for="inome">Nome:</label>
         <input type="text" name="nome" id="inome"><br>
 
