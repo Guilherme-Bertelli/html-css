@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+/* Todas as versões */  
+
+
+/* Impressão */
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        border: 2px dotted black;
+    }
+    
+    h1::before {
+        content: "Versão para Impressora";
+    }    
+
+    main::after {
+        content: 'Essa impressão foi feita por: github.com/Guilherme-Bertelli';
+    }
+
+    main > h1 {
+        color: black;
+        text-shadow: none;
+    }
+
+    /* deixando só o icon da impressão */
+
+    img#impressora {
+        display: block;
+        margin: auto;
+    }
+
+    #tablet, img#phone, #tv, #pc {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1::after {
+        content: "Versão para Celular";
+    }
+
+    h1 {
+        font-size: 1.7em;
+    }
+}
+
+/* Tablets em paisagem e superiores */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    h1::before {
+        content: "Versão para Tablets";
+    }    
+
+    /* deixando só o icon do tablet */
+
+    img#tablet {
+        display: block;
+        margin: auto;
+    }
+
+    #impressora, img#phone, #tv, #pc {
+        display: none;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    h1::before {
+        content: "Versão para Desktop";
+    }    
+
+    /* deixando só o icon do desktop */
+
+    img#pc {
+        display: block;
+        margin: auto;
+        transition: .3s;
+    }
+
+
+    #impressora, img#phone,#tablet, #tv {
+        display: none;
+        transition: .3s;
+    }
+}   
+
+/* Grandes telas */
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    h1::before {
+        content: "Versão para Televisão";
+    }
+
+    /* deixando só o icon do tv */
+
+    img#tv {
+        display: block;
+        margin: auto;
+        transition: .3s;
+    }
+
+    #impressora, img#phone,#tablet, #pc {
+        display: none;
+        transition: .3s;
+    }
+}
