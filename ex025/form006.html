@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        input {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php">
+        <label for="icor">Cor: </label>
+        <input type="color" name="cor" id="icor" value="#00ff00"><br>
+
+        <label for="inivel">Nível de Satisfação: </label>
+        <input type="range" name="nivel" id="inivel" min="0" max="10" value="3">
+    </form>
+</body>
+</html>
