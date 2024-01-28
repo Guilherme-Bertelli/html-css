@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        input, select {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <label for="iest">Estado: </label>
+        <select name="estado" id="iest">
+            <option value="escolha" selected>--- Escolha ---</option>
+            <optgroup label="Região Sudeste" >
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+            </optgroup>
+
+            <optgroup label="Região Norte">
+                <option value="MA">Maranhão</option>
+                <option value="PE">Pernambuco</option>
+                <option value="RN">Rio Grande do Norte</option>
+            </optgroup>
+        </select><br>
+
+        <label for="iprof">Profissão: </label>
+        <input type="text" name="profissão" id="iprof" list="eprof">
+        <datalist id="eprof">
+            <option>Desenvolvedor</option>
+            <option>Engenheiro</option>
+            <option value="MEC">Mecânico</option>
+            <option value="PED">Pedreiro</option>
+        </datalist><br>
+
+        <label for="ifedb">Fedback: </label><br>
+        <textarea name="fedbak" id="ifedb" cols="30" rows="10"></textarea><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Deletar">
+    </form>
+</body>
+</html>
